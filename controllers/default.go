@@ -55,21 +55,41 @@ c.Ctx.ResponseWriter.Write([]byte("校验成功"))
 //}
 //c.Ctx.WriteString("数据校验成功")
 //}
-func (c *MainController) Post()  {
-//1.解析前端提交的Json格式的数据
-	var person models.Person
+//func (c *MainController) Post()  {
+//////1.解析前端提交的Json格式的数据
+////	var person models.Person
+////	dataBytes,err:=ioutil.ReadAll(c.Ctx.Request.Body)
+////	if err!=nil{
+////		c.Ctx.WriteString("数据接收错误，请重试")
+////		return
+////	}
+////	err=json.Unmarshal(dataBytes,&person)
+////	if err!=nil {
+////		c.Ctx.WriteString("s数据解释失败，请重试")
+////		return
+////	}
+////	fmt.Println("姓名",person.Name)
+////	fmt.Println("年龄",person.Age)
+////	fmt.Println("性别",person.Sex)
+////	c.Ctx.WriteString("数据解析成功")
+////}
+func (c *MainController) Post(){
+//	解析前端提交的Json格式的数据
+	var person models.Persons
 	dataBytes,err:=ioutil.ReadAll(c.Ctx.Request.Body)
-	if err!=nil{
+	if err!=nil {
 		c.Ctx.WriteString("数据接收错误，请重试")
 		return
 	}
 	err=json.Unmarshal(dataBytes,&person)
 	if err!=nil {
-		c.Ctx.WriteString("s数据解释失败，请重试")
+		c.Ctx.WriteString("数据解析失败，请重试")
 		return
 	}
+	c.Ctx.WriteString("数据接收成功")
 	fmt.Println("姓名",person.Name)
-	fmt.Println("年龄",person.Age)
-	fmt.Println("性别",person.Sex)
-	c.Ctx.WriteString("数据解析成功")
+	fmt.Println("生日",person.Birthday)
+	fmt.Println("地址",person.Address)
+	fmt.Println("名称",person.Nick)
+
 }
