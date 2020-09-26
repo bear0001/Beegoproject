@@ -36,7 +36,7 @@ func InsertUser(user models.User) (int64,error) {
 	byte:=hashMd5.Sum(nil)
 	user.Password=hex.EncodeToString(byte)
 	fmt.Println("将要保存的用户名:",user.Nick,"密码:",user.Password)
-result,err:=Db.Exec("insert into beego_text(nick,password) values(?,?)",user.Nick,user.Password)
+result,err:=Db.Exec("insert into beego_text(nick,password,sex,way) values(?,?,?,?)",user.Nick,user.Password,user.Sex,user.Way)
 	if err!=nil{
 		return  -1,err
 	}

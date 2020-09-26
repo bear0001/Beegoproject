@@ -9,6 +9,9 @@ type User struct {
 	Address  string`json:"address"`
 	Nick     string`json:"nick"`
 	Password string `json:"password"`
+	Sex string`json:"sex"`
+	Way string`json:"way"`
+
 }
 
 //type User struct {
