@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="793f2016-e03d-4b46-b044-d6659edd1ab7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/presons.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/registerController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_mysql/db_go.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/person.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/person.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/presons.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/presons.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +41,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../beeproject923" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (1)">
+  <component name="RunManager" selected="Go Build.go build db_go.go">
+    <configuration name="go build db_go.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Project922" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/db_mysql/db_go.go" />
+      <package value="Project922" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Project922" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -58,6 +70,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build db_go.go" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
@@ -66,29 +79,45 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="484" y="131" key="#go_build_db_go.go" timestamp="1601105074916">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="484" y="131" key="#go_build_db_go.go/0.0.1536.824@0.0.1536.824" timestamp="1601105074916" />
     <state x="495" y="140" key="#go_build_main.go" timestamp="1600744013208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="495" y="140" key="#go_build_main.go/0.0.1536.824@0.0.1536.824" timestamp="1600744013208" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1600823826522">
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1600999260076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600823826522" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1600959028649">
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600999260076" />
+    <state width="1493" height="227" key="GridCell.Tab.0.bottom" timestamp="1601106850169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600959028649" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1600959028649">
+    <state width="1493" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601106850169" />
+    <state width="1493" height="227" key="GridCell.Tab.0.center" timestamp="1601106850169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600959028649" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1600959028649">
+    <state width="1493" height="227" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601106850169" />
+    <state width="1493" height="227" key="GridCell.Tab.0.left" timestamp="1601106850169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600959028649" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1600959028649">
+    <state width="1493" height="227" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601106850169" />
+    <state width="1493" height="227" key="GridCell.Tab.0.right" timestamp="1601106850169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600959028649" />
+    <state width="1493" height="227" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601106850169" />
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1" timestamp="1601104293897">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1601104293897" />
+    <state x="93" y="93" width="1350" height="638" key="dock-window-2" timestamp="1601104293897">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1601104293897" />
+    <state x="659" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1600998694888">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="659" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600998694888" />
   </component>
 </project>

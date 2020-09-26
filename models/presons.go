@@ -7,4 +7,5 @@ type Persons struct {
 	Birthday string
 	Address  string
 	Nick     string
+	//Password
 }
