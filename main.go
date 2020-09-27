@@ -36,3 +36,6 @@ func main()  {
 //在初始化函数中链接数据库
 
 
+//leetcode
+
+

@@ -7,6 +7,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"github.com/astaxie/beego"
+	//mysql倒包
 	_ "github.com/go-sql-driver/mysql"
 )
 var Db*sql.DB
@@ -50,3 +51,4 @@ result,err:=Db.Exec("insert into beego_text(nick,password,sex,way) values(?,?,?,
 func QueryUser()  {
 	Db.QueryRow("select *from ")
 }
+//连接数据库
